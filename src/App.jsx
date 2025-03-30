@@ -1,4 +1,4 @@
-import Newsapp from "./components/Newsapp"
+import Newsapp from "./components/NewsApp"
 
 
 
