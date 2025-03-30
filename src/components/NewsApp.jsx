@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Card from './Card.jsx'
+import Card from './Card'
 
 const Newsapp = () => {
     const apikey = import.meta.env.VITE_API_KEY;
