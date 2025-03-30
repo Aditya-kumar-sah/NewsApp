@@ -13,7 +13,7 @@ const Card = ({data}) => {
                 console.log(currItem)
                 return(
                     <div className='flex flex-col items-center w-full border border-gray-400 hover:border-gray-600 p-2 rounded-sm'>
-                       <img className='md:h-[240px] h-[190px] w-[100%] rounded-sm' src={currItem.urlToImage}/>
+                       <img className='md:h-[240px] h-[190px] w-[100%] rounded-sm' src={currItem.image}/>
                        <div className='flex flex-col items-start gap-4 p-2'>
                           <a className='text-xl text-gray-800 cursor-pointer hover:underline'  onClick={()=>readMore(currItem.url)}>{currItem.title}</a>
                           <p className='text-gray-600'>{currItem.description}</p>
