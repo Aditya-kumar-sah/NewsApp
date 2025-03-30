@@ -8,11 +8,9 @@ const Newsapp = () => {
     const [newsData,setNewsData] = useState(null);
 
     const getData = async () =>{
-           const response = await fetch(`https://newsapi.org/v2/everything?q=${articles}&apiKey=${apikey}`);
+           const response = await fetch(`https://gnews.io/api/v4/search?q=${articles}&lang=en&country=in&apikey=${apikey}`);
            const jsonData = await response.json();
            setNewsData(jsonData.articles);
-           console.log(jsonData);
-           console.log(response);
     }
 
     const getInput = (e) =>{
